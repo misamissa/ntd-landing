@@ -1,0 +1,46 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.reviews-partial {
+  padding: 40px 124px 33px 109px;
+  background-color: $card-background;
+  .VueCarousel {
+    padding-left: 53px;
+    .VueCarousel-slide {
+      @include flex(column, null, center);
+      max-width: 403px;
+      padding: 15px 0;
+    }
+  }
+  .avatar {
+    background-image: url(../../../public/static/img/man.jpg);
+    width: 118px;
+    height: 118px;
+    margin-bottom: 22px;
+    background-size: cover;
+    border-radius: 68px;
+  }
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    color: $light-green;
+  }
+  .position {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 22px;
+    text-align: center;
+    padding: 7px 14px;
+    letter-spacing: 0.8px;
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="areas-partial" ref="areas">
+  <green-stick :title="'Highlights'" :text="'Main areas of the Company’s activities '"></green-stick>
+  <div class="areas-item">
+    <areas-wrapper
+    v-for="area in areas"
+    :key="area.title"
+    :title="area.title"
+    :text="area.text"
+    :statistics="area.statistics"
+    :tags="area.tags"
+    ></areas-wrapper>
+  </div>
+</div>

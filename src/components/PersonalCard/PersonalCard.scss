@@ -1,0 +1,35 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.personal-card {
+  @include flex(column, null, center);
+  min-width: 309px;
+  max-width: 255px;
+  height: 298px;
+  padding: 15px 0;
+  .avatar {
+    background-image: url(../../../public/static/img/man.jpg);
+    background-size: cover;
+    width: 191px;
+    height: 191px;
+    border-radius: 100px;
+    margin-bottom: 22px;
+  }
+  .name {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 41px;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $light-green;
+  }
+  .position {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    padding: 0 10px;
+    text-align: center;
+  }
+}

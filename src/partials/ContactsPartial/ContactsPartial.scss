@@ -1,0 +1,109 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.contacts-partial {
+  padding: 81px 109px 112px 109px;
+  .green-stick {
+    margin-bottom: 15px;
+    .text {
+      letter-spacing: 1.3px;
+    }
+  }
+  .contacts-wrapper {
+    @include flex(row, space-between, null);
+    padding: 0 159px 0 35px;
+    .contacts {
+      @include flex(column, null, null);
+      min-width: 335px;
+      .contact {
+        padding-left: 46px;
+        margin-bottom: 9px;
+        font-size: 33px;
+        font-weight: 200;
+        p {
+          &:first-child {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 23px;
+            opacity: 0.5;
+          }
+          &:nth-child(2) {
+            font-size: 34px;
+          }
+        }
+      }
+      .phone, .skype, .telegram {
+        margin-bottom: 10px;
+        .title {
+          @include flex(row, null, center);
+          padding: 9px 12px;
+          color: $light-green;
+          p {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 19px;
+            text-transform: uppercase;
+            margin: 0 10px;
+          }
+          .img {
+          }
+        }
+      }
+      .skype, .telegram {
+        padding-bottom: 0;
+      }
+    }
+    .form {
+      max-width: 666px;
+      width: 100%;
+      form {
+        @include flex(column, null, null);
+        margin-top: 28px;
+        p {
+          margin-bottom: 27px;
+          font-size: 16px;
+          font-weight: 300;
+        }
+        input {
+          height: 46px;
+          border: none;
+          background-color: $input-green;
+          margin-bottom: 17px;
+          padding: 1px 21px;
+          color: $input-color;
+
+          &::placeholder {
+            color: $input-color;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .text {
+          height: 142px;
+        }
+        button {
+          height: 49px;
+          width: 192px;
+          text-transform: uppercase;
+          margin-top: 8px;
+          background-color: $light-green;
+          border: none;
+          font-size: 15px;
+          font-weight: bold;
+          line-height: 20px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      justify-content: space-between;
+      padding-right: 25px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,8 @@
+export { default as HeaderPartial } from './HeaderPartial/HeaderPartial.vue'
+export { default as AboutPartial } from './AboutPartial/AboutPartial.vue'
+export { default as AreasPartial } from './AreasPartial/AreasPartial.vue'
+export { default as ProjectsPartial } from './ProjectsPartial/ProjectsPartial.vue'
+export { default as ReviewsPartial } from './ReviewsPartial/ReviewsPartial.vue'
+export { default as TeamPartial } from './TeamPartial/TeamPartial.vue'
+export { default as ContactsPartial } from './ContactsPartial/ContactsPartial.vue'
+export { default as FooterPartial } from './FooterPartial/FooterPartial.vue'

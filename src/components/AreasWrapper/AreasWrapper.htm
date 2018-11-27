@@ -1,0 +1,13 @@
+<div class="areas-wrapper">
+  <div class="title">{{title}}</div>
+  <div class="text">{{text}}</div>
+  <div class="statistics">
+    <div class="item" v-for="s in statistics" :key="">
+      <div class="numeric">{{s.numeric}}</div>
+      <div class="item-text">{{s.text}}</div>
+    </div>
+  </div>
+  <div class="tags">
+    <div class="tag" v-for="tag in tags" :key="tag">{{tag}}</div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="projects-partial" ref="project">
+  <green-stick :title="'Case studies'" :text="'Projects'"></green-stick>
+  <div class="card-wrapper">
+    <card
+      v-for="project in projects"
+      :url="project.url"
+      :title="project.title"
+      :text="project.text"
+      :link="project.link"
+      :list="project.list">
+    </card>
+  </div>
+</div>

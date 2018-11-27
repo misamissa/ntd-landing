@@ -1,0 +1,31 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.projects-partial {
+  padding: 102px 110px;
+  padding-bottom: 65px;
+  .card-wrapper {
+    @include flex(row, null, null);
+    flex-wrap: wrap;
+    padding: 26px 15px;
+    padding-right: 23px;
+    justify-content: space-around;
+    .card {
+      &:first-child {
+        .img {
+          background-image: url(../../../public/static/img/timex.png);
+        }
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      padding: 26px 15px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 45px 30px;
+  }
+}

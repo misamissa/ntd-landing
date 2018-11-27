@@ -1,0 +1,119 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.header-partial {
+  .header {
+    @include flex(row, flex-start, center);
+    background-color: $background-green;
+    padding: 47px 95px 47px 153px;
+    .logo {
+      background-image: url(../../../public/static/NTDlogo2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 89px;
+      height: 51px;
+      margin-right: 34px;
+      @media only screen and (max-width: 900px) {
+        width: 76px;
+        height: 43px;
+        margin-right: 19px;
+      }
+    }
+    .content-wrapper {
+      @include flex(row, space-between, center);
+      width: 90%;
+      .logo-text {
+        font-family: 'Exo 2', sans-serif!important;
+        font-size: 23px;
+        line-height: 21px;
+        p {
+          &:nth-child(2) {
+            opacity: 0.9;
+          }
+        }
+        @media only screen and (max-width: 900px) {
+          font-size: 20px;
+        }
+      }
+      ul {
+        @include flex(row, space-between, center);
+        padding: 0;
+        width: 61%;
+        li {
+          list-style-type: none;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        font-size: 14px;
+        ul {
+          width: 70%;
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+    @media only screen and (max-width: 1200px) {
+      padding: 47px 30px 47px 30px;
+    }
+  }
+  .main {
+    padding: 73px 136px 533px 136px;
+    font-weight: 300;
+    position: relative;
+    background-color: $main-background;
+    background-image: url(../../../public/static/bg.png);
+    background-position-y: -142px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .image {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+    }
+    @media only screen and (max-width: 1200px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media only screen and (max-width: 900px) {
+      padding: 0 30px 185px;
+      background-position-y: -18px;
+    }
+  }
+  .slogan {
+    @include flex(row, null, center);
+    .firm {
+      font-size: 153px;
+      text-transform: uppercase;
+      margin-right: 40px;
+      height: 190px;
+    }
+    .options {
+      font-size: 34px;
+      font-weight: 200;
+      font-style: italic;
+      padding-top: 9px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .about {
+    color: #5AFBBA;
+    font-size: 66px;
+    line-height: 64px;
+    padding-left: 8px;
+    font-weight: 200;
+    p {
+      margin: 0;
+    }
+    @media only screen and (max-width: 900px) {
+      font-size: 41px;
+    }
+  }
+}

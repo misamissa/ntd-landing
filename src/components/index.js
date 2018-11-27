@@ -1,0 +1,6 @@
+export { default as GreenStick } from './GreenStick/GreenStick.vue'
+export { default as NtdCarousel } from './NtdCarousel/NtdCarousel.vue'
+export { default as AreasWrapper } from './AreasWrapper/AreasWrapper.vue'
+export { default as Card } from './Card/Card.vue'
+export { default as PersonalCard } from './PersonalCard/PersonalCard.vue'
+export { default as PhoneComponent } from './PhoneComponent/PhoneComponent.vue'

@@ -1,0 +1,10 @@
+<div class="reviews-partial" ref="reviews">
+  <ntd-carousel>
+    <slide v-for="person in persons">
+      <div class="avatar"></div>
+      <div class="name">{{person.name}}</div>
+      <div class="position">{{person.position}}</div>
+      <div class="text">{{person.text}}</div>
+    </slide>
+  </ntd-carousel>
+</div>

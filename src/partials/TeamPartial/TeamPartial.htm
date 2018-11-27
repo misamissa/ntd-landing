@@ -1,0 +1,6 @@
+<div class="team-partial" ref="team">
+  <green-stick :title="'Team'" :text="'Our team is a like-minded people, united by a high professional level'"></green-stick>
+  <div class="personal-wrapper">
+    <personal-card v-for="person in persons" :name="person.name" :position="person.position"></personal-card>
+  </div>
+</div>

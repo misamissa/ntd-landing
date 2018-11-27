@@ -1,0 +1,32 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.phone-component {
+  .phone {
+    @include flex(null, center, center);
+    z-index: 99;
+    animation: pulse 3s infinite;
+    width: 116px;
+    height: 116px;
+    background: $pink;
+    border-radius: 68px;
+    position: fixed;
+    right: 120px;
+    // top: 138px;
+    bottom: 65px;
+    cursor: pointer;
+    @keyframes pulse {
+      0% {
+        -moz-box-shadow: 0 0 0 0 rgba(249,52,255, 0.4);
+        box-shadow: 0 0 0 0 rgba(249,52,255, 0.4);
+      }
+      70% {
+          -moz-box-shadow: 0 0 0 10px rgba(249,52,255, 0);
+          box-shadow: 0 0 0 30px rgba(249,52,255, 0);
+      }
+      100% {
+          -moz-box-shadow: 0 0 0 0 rgba(249,52,255, 0);
+          box-shadow: 0 0 0 0 rgba(249,52,255, 0);
+      }
+    }
+  }
+}

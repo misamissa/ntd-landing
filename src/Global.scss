@@ -1,0 +1,57 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+#particles-js {
+  z-index: 9;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding: 0 84px;
+  .particles-js-canvas-el {
+    border-radius: 305px;
+  }
+}
+p {
+  margin: 0;
+}
+.VueCarousel-navigation-button {
+  padding: 0!important;
+  color: red!important;
+}
+.VueCarousel-navigation-prev {
+  border: 26px solid transparent!important;
+  border-right: 14px solid $light-green!important;
+}
+.VueCarousel-navigation-next {
+  border: 26px solid transparent!important;
+  border-left: 14px solid $light-green!important;
+}
+.reviews-partial {
+  .VueCarousel {
+    max-width: 1225px;
+    // padding-left: 48px;
+  }
+}
+.about-partial {
+  .VueCarousel {
+    @include flex(null, center, null);
+    .VueCarousel-wrapper {
+      max-width: 1230px;
+    }
+    @media only screen and (max-width: 1024px) {
+      max-width: 607px;
+    }
+  }
+}
+.contacts-partial {
+  .text {
+    letter-spacing: 1.3px!important;
+  }
+}

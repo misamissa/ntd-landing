@@ -1,0 +1,30 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.areas-partial {
+  padding: 0 109px;
+  .areas-item {
+    @include flex(row, center, null);
+    padding: 0 10px;
+    .areas-wrapper {
+      padding: 46px 21px;
+      max-width: 380px;
+      width: 380px;
+      @media only screen and (max-width: 900px) {
+        padding: 0;
+        padding-top: 30px;
+        min-width: 237px;
+      }
+      @media only screen and (max-width: 900px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

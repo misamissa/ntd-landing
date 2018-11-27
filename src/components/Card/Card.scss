@@ -1,0 +1,69 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.card {
+  // min-width: 393px;
+  // width: 393px;
+  max-width: 393px;
+  width: 32%;
+  height: auto;
+  margin-bottom: 21px;
+  // margin-right: 26px;
+  background-color: $card-background;
+  padding-bottom: 20px;
+  cursor: pointer;
+  &:first-child {
+    .img {
+      background-image: url(../../../public/static/img/timex.png);
+    }
+  }
+  &:nth-child(2) {
+    .img {
+      background-image: url(../../../public/static/img/ople.png);
+    }
+  }
+  .img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+  .title {
+    padding: 23px 23px 17px 23px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .text {
+    padding: 0px 21px;
+    font-weight: 300;
+    line-height: 22px;
+    ul {
+      padding: 0 10px;
+    }
+    li {
+      list-style-type: none;
+      &:before {
+        content:  "-";
+        position: relative;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      padding-bottom: 20px;
+    }
+  }
+  &:hover {
+    background-color: $light-green;
+    .title, .text {
+      color: $black;
+    }
+  }
+  @media only screen and (max-width: 1212px) {
+    height: 400px;
+  }
+  @media only screen and (max-width: 900px) {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}

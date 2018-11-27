@@ -1,0 +1,18 @@
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+.team-partial {
+  padding: 112px 109px;
+  padding-bottom: 0;
+  .green-stick {
+    margin-bottom: 65px;
+    max-width: 800px;
+  }
+  .personal-wrapper {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
