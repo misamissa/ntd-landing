@@ -1,10 +1,10 @@
 <div class="reviews-partial" ref="reviews">
   <ntd-carousel>
-    <slide v-for="person in persons">
-      <div class="avatar"></div>
+    <slide v-for="person in reviews">
+      <div class="avatar" v-bind:style="{'backgroundImage': getStyle(person)}"></div>
       <div class="name">{{person.name}}</div>
       <div class="position">{{person.position}}</div>
-      <div class="text">{{person.text}}</div>
+      <div class="text">{{person.review}}</div>
     </slide>
   </ntd-carousel>
 </div>

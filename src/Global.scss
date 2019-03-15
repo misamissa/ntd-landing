@@ -13,9 +13,30 @@ body {
   bottom: 0;
   left: 0;
   height: auto;
-  padding: 0 84px;
+  padding-left: 35px;
+  max-width: 690px;
+  overflow: hidden;
+  border-radius: 310px;
   .particles-js-canvas-el {
     border-radius: 305px;
+    height: 100vmax !important;
+    z-index: 0;
+  }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    top: 104px;
+    height: 51%;
+  }
+  @media (min-width: 1200px) and (max-width: 1280px) {
+    top: 104px;
+    height: 63%;
+  }
+  @media (min-width: 1280px) and (max-width: 1445px) {
+    top: 104px;
+    height: 50%;
+  }
+  @media (min-width: 1445px) {
+    top: 36px;
+    height: 88%;
   }
 }
 p {

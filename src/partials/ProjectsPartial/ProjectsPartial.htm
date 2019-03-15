@@ -3,9 +3,9 @@
   <div class="card-wrapper">
     <card
       v-for="project in projects"
-      :url="project.url"
+      :url="project.avatar.url"
       :title="project.title"
-      :text="project.text"
+      :text="project.about"
       :link="project.link"
       :list="project.list">
     </card>

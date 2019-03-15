@@ -9,13 +9,13 @@
     padding: 26px 15px;
     padding-right: 23px;
     justify-content: space-around;
-    .card {
-      &:first-child {
-        .img {
-          background-image: url(../../../public/static/img/timex.png);
-        }
-      }
-    }
+    // .card {
+    //   &:first-child {
+    //     .img {
+    //       background-image: url(../../../public/static/img/timex.png);
+    //     }
+    //   }
+    // }
     @media only screen and (max-width: 900px) {
       flex-direction: column;
       padding: 26px 15px;

@@ -11,9 +11,13 @@
     border-radius: 68px;
     position: fixed;
     right: 120px;
-    // top: 138px;
-    bottom: 65px;
+    // bottom: 65px;
+    top: 150px;
     cursor: pointer;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     @keyframes pulse {
       0% {
         -moz-box-shadow: 0 0 0 0 rgba(249,52,255, 0.4);
@@ -28,5 +32,9 @@
           box-shadow: 0 0 0 0 rgba(249,52,255, 0);
       }
     }
+  }
+  .toBottom {
+    position: fixed;
+    top: 80%;
   }
 }

@@ -16,6 +16,11 @@ export default {
       type: Array,
     },
   },
+  computed: {
+    getStyle() {
+      return `url(${this.url})`
+    }
+  },
   methods: {
     go () {
       window.open(this.link, '_blank');

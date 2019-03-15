@@ -1,4 +1,9 @@
 export default {
+  props: {
+    slogan: {
+      type: Array
+    }
+  },
   methods: {
     goTo(name) {
       let a = this.$parent.$children

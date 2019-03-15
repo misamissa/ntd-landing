@@ -10,5 +10,13 @@ module.exports = {
         'src': resolve('src'),
       }
     },
+  },
+
+  pwa: {
+    workboxOptions: {
+      templatedUrls: {
+        '/': 'index.ssr.html'
+      }
+    }
   }
 }

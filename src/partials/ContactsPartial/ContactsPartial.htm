@@ -2,7 +2,6 @@
   <green-stick :title="'Contacts'" :text="'Do not hesitate to contact us'"></green-stick>
   <div class="contacts-wrapper">
     <div class="form">
-      <!-- <p>One important feature you want to look for when choosing an audio player beyond what is packaged with your operating system is the sound filtering capabilities.</p> -->
       <form @submit="submit">
         <input type="text" name="name" value="" placeholder="Your name">
         <input type="text" name="subject" value="" placeholder="Subject">
@@ -12,7 +11,7 @@
         <button type="button" name="button">send message</button>
       </form>
     </div>
-    <div class="contacts">
+    <div class="contacts" v-for="contact in contacts">
       <div class="phone">
         <div class="title">
           <div class="img">
@@ -22,17 +21,9 @@
           </div>
           <p>phones</p>
         </div>
-        <div class="contact">
-          <p>Principal Design</p>
-          <p>+ 7 951 232-6501</p>
-        </div>
-        <div class="contact">
-          <p>Principal Design</p>
-          <p>+ 7 951 232-6501</p>
-        </div>
-        <div class="contact">
-          <p>Principal Design</p>
-          <p>+ 7 951 232-6501</p>
+        <div class="contact" v-for="phone in contact.phones">
+          <p>{{phone.name}}</p>
+          <p v-for="phone in phone.phones">{{phone}}</p>
         </div>
       </div>
       <div class="skype">
@@ -44,7 +35,7 @@
           </div>
           <p>skype</p>
         </div>
-        <div class="contact">NTD.INFO</div>
+        <div class="contact">{{contact.skype}}</div>
       </div>
       <div class="telegram">
         <div class="title">
@@ -55,7 +46,7 @@
           </div>
           <p>telegram</p>
         </div>
-        <div class="contact">NTD.INFO</div>
+        <div class="contact">{{contact.telegram}}</div>
       </div>
     </div>
   </div>

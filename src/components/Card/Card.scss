@@ -11,16 +11,6 @@
   background-color: $card-background;
   padding-bottom: 20px;
   cursor: pointer;
-  &:first-child {
-    .img {
-      background-image: url(../../../public/static/img/timex.png);
-    }
-  }
-  &:nth-child(2) {
-    .img {
-      background-image: url(../../../public/static/img/ople.png);
-    }
-  }
   .img {
     width: 100%;
     background-size: cover;

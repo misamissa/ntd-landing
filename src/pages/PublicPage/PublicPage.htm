@@ -1,0 +1,13 @@
+<div class="root-public-page" :scroll="handleScroll">
+  <div class="public-page">
+    <phone-component :scrolled="scrolled"></phone-component>
+    <header-partial :slogan="slogan"/>
+    <about-partial :reasons="reasons" :vacancies="vacancies"/>
+    <areas-partial :areas="areas"/>
+    <projects-partial :projects="projects"/>
+    <reviews-partial :reviews="reviews"/>
+    <team-partial :employees="employees"/>
+    <contacts-partial :contacts="contacts"/>
+    <footer-partial/>
+  </div>
+</div>

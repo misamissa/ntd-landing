@@ -1,5 +1,5 @@
 <div class="card" @click="go">
-  <div class="img"></div>
+  <div class="img" v-bind:style="{'backgroundImage': getStyle}"></div>
   <div class="title">{{title}}</div>
   <div class="text">
     <p>{{text}}</p>
